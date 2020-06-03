@@ -1,0 +1,38 @@
+// * SERVICE CARD COMPONENT
+.service-card {
+  position: relative;
+  width: 33.3333333%;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba($color-black, 0.3);
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .top-bar {
+    position: absolute;
+    top: 0%;
+    border: 3px solid $color-secondary;
+    width: 40%;
+    border-radius: 1rem;
+  }
+
+  &__img-wrapper {
+    height: 30%;
+  }
+
+  &__img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  &__text-wrapper {
+    height: 70%;
+  }
+}

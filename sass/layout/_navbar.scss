@@ -1,0 +1,40 @@
+// * PRIMARY NAVIGATION BAR
+
+.nav {
+  height: 15vh;
+  padding: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // * LOGO DIV WITH IMAGE
+  &__logo {
+  }
+
+  &__logo-img {
+    width: 9rem;
+  }
+
+  // * LINKS DIV WITH UL INSIDE DIV>UL>LI>A
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-right: 2.5rem;
+    padding: 1rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-size: 2rem;
+  }
+}

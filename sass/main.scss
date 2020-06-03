@@ -1,0 +1,24 @@
+// * MAIN SCSS FILE, ALL IMPORTS
+
+// * ABSTRACT
+@import 'abstract/mixins';
+@import 'abstract/variables';
+
+// * BASE
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utils';
+
+// * COMPONENTS
+@import 'components/textBar';
+@import 'components/serviceCard';
+@import 'components/gift';
+
+// * LAYOUT
+@import 'layout/layout';
+@import 'layout/navbar';
+@import 'layout/hero';
+
+// * PAGES
+@import 'pages/home';

@@ -1,0 +1,26 @@
+.services {
+  &__wrapper {
+    margin-top: 5rem;
+  }
+}
+
+.gifts {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    background-image: url('../assets/img/bg/bg-primary.svg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    .heading-secondary {
+        padding-top: 4rem;
+    }
+
+    .paragraph-sub {
+        max-width: 100rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+}

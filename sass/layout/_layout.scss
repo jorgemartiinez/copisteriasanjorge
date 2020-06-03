@@ -1,0 +1,13 @@
+// * COMMON LAYOUTS PAGE
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}

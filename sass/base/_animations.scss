@@ -1,0 +1,14 @@
+// * ANIMATIONS FILE
+
+// * BOUNCE
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

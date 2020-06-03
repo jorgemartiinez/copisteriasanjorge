@@ -1,0 +1,51 @@
+// * TYPOGRAPHIES STYLING
+
+// * HEADINGS
+.heading-primary {
+  font-size: 5.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+// * PARAGRAPHS
+.paragraph-desc {
+  font-size: 2.4rem;
+}
+
+.paragraph-sub {
+  font-size: 1.9rem;
+  color: $color-grey-dark;
+}
+
+.paragraph-info {
+  font-size: 1.7rem;
+  color: $color-grey-dark;
+
+}
+
+// * COLOR MODIFIERS
+.text-white {
+  color: $color-white;
+}
+
+.text-grey-dark {
+  color: $color-grey-dark;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}

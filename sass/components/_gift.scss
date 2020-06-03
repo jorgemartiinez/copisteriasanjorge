@@ -1,0 +1,16 @@
+// * REGALOS PERSONALIZADOS COMPONENT
+.gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  &__img {
+    display: block;
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+  &__link {
+    color: $color-white;
+  }
+}
