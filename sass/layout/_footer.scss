@@ -9,10 +9,14 @@
     align-items: baseline;
     justify-content: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   // * TAMAÑOS COLUMNAS
-  &__col:first-child {
+  &__col::nth-child(1) {
     flex: 0 0 25%;
   }
 
@@ -25,9 +29,15 @@
   }
 
   &__col {
-    flex: 0 0 10%;
+    flex: 0 0 12.5%;
     &:not(:last-child) {
       margin-right: 5rem;
+      @include respond(tab-port) {
+        margin-right: 0rem;
+      }
+    }
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
     }
   }
 
@@ -36,11 +46,21 @@
   &__links {
     display: flex;
     flex-direction: column;
+    @include respond(tab-port) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__link-item {
     &:not(:last-child) {
       margin-bottom: 1rem;
+      @include respond(tab-port) {
+        margin-bottom: 0rem;
+        margin-right: 3rem;
+      }
     }
   }
   &__link {

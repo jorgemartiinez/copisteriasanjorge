@@ -2,6 +2,12 @@
 .hero {
   position: relative;
   height: 90%;
+  width: 100%;
+  @include respond(tab-port) {
+    height: 70%;
+  }
+
+ 
 
   // * DIV WITH ALL THE TEXT, BG IMAGE AND STUFF
   &__overlay {
