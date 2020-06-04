@@ -11,6 +11,23 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 40%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
@@ -19,6 +36,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+  height: 100%;
   line-height: 1.7;
   overflow-x: hidden;
 }

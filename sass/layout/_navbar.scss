@@ -1,18 +1,23 @@
 // * PRIMARY NAVIGATION BAR
 
 .nav {
-  height: 15vh;
+  height: 10rem;
   padding: 2rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include respond(tab-port){
+    height: auto;
+    flex-direction: column;
+  }
 
   // * LOGO DIV WITH IMAGE
   &__logo {
   }
 
   &__logo-img {
-    width: 9rem;
+    width: 7rem;
   }
 
   // * LINKS DIV WITH UL INSIDE DIV>UL>LI>A
@@ -26,6 +31,9 @@
   &__links {
     display: flex;
     justify-content: space-around;
+    @include respond(phone){
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -36,5 +44,6 @@
   &__link {
     color: $color-primary;
     font-size: 2rem;
+    text-transform: capitalize;
   }
 }

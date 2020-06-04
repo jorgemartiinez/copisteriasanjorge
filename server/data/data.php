@@ -1,7 +1,12 @@
 <?php
 
-$info = array ("title" => "Copistería San Jorge");
+// * INFO PAGE DATA
+$info = array("title" => "Copistería San Jorge");
 
+// * NAV LINKS
+$nav_links = array('inicio', 'nosotros', 'novedades', 'coronavirus', 'contacto');
+
+// * SERVICES DATA
 $services = array(
 
     array(

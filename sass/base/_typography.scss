@@ -17,6 +17,11 @@
   font-weight: 500;
 }
 
+.heading-quaternary {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 // * PARAGRAPHS
 .paragraph-desc {
   font-size: 2.4rem;
@@ -48,4 +53,8 @@
 
 .text-secondary {
   color: $color-secondary;
+}
+
+.text-white-shadowed {
+  color: $color-white-shadowed;
 }

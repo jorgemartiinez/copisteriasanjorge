@@ -20,21 +20,12 @@
         <!-- Links navegación -->
         <div class="nav__nav">
             <ul class="nav__links">
-                <li class="nav__item">
-                    <a href="inicio" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="nosotros" class="nav__link">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="novedades" class="nav__link">Novedades</a>
-                </li>
-                <li class="nav__item">
-                    <a href="coronavirus" class="nav__link">Coronavirus</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contacto" class="nav__link">Contacto</a>
-                </li>
+                <?php
+                foreach ($nav_links as $nav) { ?>
+                    <li class="nav__item">
+                        <a href="<?= $nav ?>" class="nav__link"><?= $nav ?></a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </nav>
@@ -55,32 +46,24 @@
         <!-- Sección servicios -->
         <section class="services">
             <div class="text-center">
-                <h2 class="heading-secondary text-secondary ">Servicios</h2>
+                <h2 class="heading-secondary text-secondary">Servicios</h2>
                 <div class="text-bar"></div>
                 <p class="paragraph-sub">Ofrecemos una serie de productos y servicios de primera calidad.</p>
             </div>
 
             <div class="services__wrapper">
-                <?php
-                $numOfCols = 3;
-                $rowCount = 0;
-                foreach ($services as $i => $service) {
-                    if ($rowCount % $numOfCols == 0) { ?> <div class="flex-row"> <?php }
-                                                                                $rowCount++; ?>
-                        <article class="service-card">
-                            <div class="top-bar"></div>
-                            <div class="service-card__img-wrapper">
-                                <img src="assets/img/icons/<?= $services[$i]['img'] ?>" alt="<?= $services[$i]['title'] ?> imagen del servicio" class="service-card__img" />
-                            </div>
-                            <div class="service-card__text-wrapper">
-                                <h3 class="heading-tertiary text-primary"><?= $services[$i]['title'] ?></h3>
-                                <p class="paragraph-info"><?= $services[$i]['text'] ?></p>
-                            </div>
-                        </article>
-                        <?php
-                        if ($rowCount % $numOfCols == 0) { ?> </div>
-                <?php }
-                    } ?>
+                <?php foreach ($services as $i => $service) { ?>
+                    <article class="service-card">
+                        <div class="top-bar"></div>
+                        <div class="service-card__img-wrapper">
+                            <img src="assets/img/icons/<?= $services[$i]['img'] ?>" alt="<?= $services[$i]['title'] ?> imagen del servicio" class="service-card__img" />
+                        </div>
+                        <div class="service-card__text-wrapper">
+                            <h3 class="heading-tertiary text-primary"><?= $services[$i]['title'] ?></h3>
+                            <p class="paragraph-info"><?= $services[$i]['text'] ?></p>
+                        </div>
+                    </article>
+                <?php } ?>
             </div>
 
         </section>
@@ -99,12 +82,60 @@
                 <a href="https://bit.ly/3eJYj4y" class="btn gift__link">Click para saber más</a>
             </div>
         </section>
-
-        <!-- Seccion -->
-        <section class="">
-            <h1>Adasdas</h1>
-        </section>
     </main>
+
+    <footer class="footer">
+
+        <div class="footer__cols">
+            <div class="footer__col">
+                <h3 class="heading-tertiary text-white">Copistería <br /> San Jorge</h3>
+                <p class="paragraph text-white-shadowed">Líderes en servicios de copistería con más de 10 años de experiencia.
+                    Nuestros clientes son lo más importante.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="heading-quaternary text-white">Explora</h4>
+                <ul class="footer__links">
+                    <?php
+                    foreach ($nav_links as $nav) { ?>
+                        <li class="footer__link-item">
+                            <a href="<?= $nav ?>" class="footer__link"><?= $nav ?></a>
+                        </li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="heading-quaternary text-white">Visítanos</h4>
+                <p class="paragraph text-white-shadowed mb-sm">Calle Entenza, 19, Bajo.
+                    Código postal 03803.
+                    Alcoy (Alicante). España</p>
+                <h4 class="heading-quaternary text-white">Contacto</h4>
+                <p class="paragraph text-white-shadowed">copisteriasanjorge@
+                    copisteriasanjorge.com
+                    <br />
+                    965522047
+
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4 class="heading-quaternary text-white">Síguenos</h4>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="heading-quaternary text-white">Legal</h4>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Privacidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="paragraph text-center text-white-shadowed">&copy; Copistería San Jorge. <?= date('Y'); ?></p>
+
+    </footer>
 
 
 

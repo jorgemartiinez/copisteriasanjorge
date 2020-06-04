@@ -1,28 +1,44 @@
 // * HERO SECTION, HEADER TOP OF THE PAGE
 .hero {
   position: relative;
-  height: 85vh;
+  height: 90%;
 
   // * DIV WITH ALL THE TEXT, BG IMAGE AND STUFF
   &__overlay {
-    height: 78vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90%;
 
     background-image: url('../assets/img/bg/bg-with-overlay.png');
     background-size: cover;
     background-position: bottom center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
     .heading-primary {
       text-align: center;
       padding-top: 8rem;
+      padding-right: .5rem;
+      padding-left: .5rem;
     }
 
     .paragraph-desc {
       padding-top: 3rem;
+      padding-right: .2rem;
+      padding-left: .2rem;
       width: 55%;
+
+      @include respond(tab-land) {
+        width: 65%;
+      }
+
+      @include respond(tab-port) {
+        width: 85%;
+      }
+
+      @include respond(phone) {
+        width: 95%;
+      }
     }
   }
 
@@ -31,7 +47,6 @@
     position: absolute;
     bottom: 3%;
     right: 50%;
-    height: 7vh;
     transform: translateX(50%);
     cursor: pointer;
   }
