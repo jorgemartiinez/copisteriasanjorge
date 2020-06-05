@@ -65,7 +65,7 @@ $services = array(
         <br />
         Nuestra gran experiencia con este
         tipo de eventos es una de nuestras
-        grandes especialidades.
+        especialidades.
         "
     ),
 

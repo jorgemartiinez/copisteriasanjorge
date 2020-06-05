@@ -17,6 +17,9 @@
         <div class="nav__logo">
             <img class="nav__logo-img" src="assets/img/logos/logo-mini.png" alt="Logo <?= $info['title'] ?> Alcoy" />
         </div>
+        <div class="nav__burger-wrapper">
+            <img src="assets/img/icons/burger-icon.svg" alt="Icono Menú - Vista móvil" class="nav__burger-icon">
+        </div>
         <!-- Links navegación -->
         <div class="nav__nav">
             <ul class="nav__links">
@@ -33,12 +36,12 @@
     <!-- Hero section -->
     <header class="hero">
         <div class="hero__overlay">
-            <h1 class="heading-primary text-white">Bienvenido a <br />
-                <?= $info['title'] ?></h1>
+            <h2 class="hero__text-1">Bienvenido</h2>
+            <h1 class="heading-primary text-white"> <?= $info['title'] ?></h1>
             <p class="paragraph-desc text-white">Somos una copistería ubicada en Alcoy (Alicante). Contamos con más de diez años de experiencia en nuestro sector. Nos hemos convertido en todo un referente local en servicios de impresión, edición de vídeo, revelado fotográfico, diseño gráfico y productos de papelería. </p>
         </div>
         <div class="hero__arrow">
-            <img src="assets/img/icons/ico-arrow-down.svg" class="hero__arrow-img" alt="Icono Flecha Abajo Ver Más" title="Ver Más" />
+            <img src="assets/img/icons/ico-arrow-down.svg" class="hero__arrow-img" alt="Icono Flecha Abajo Ver Más" title="¡Baja para ver más!" />
         </div>
     </header>
 
@@ -79,7 +82,7 @@
             </div>
             <div class="gift">
                 <img src="assets/img/products/regalos-personalizados.svg" alt="Regalos Personalizados" class="gift__img">
-                <a href="https://bit.ly/3eJYj4y" class="btn gift__link">Click para saber más</a>
+                <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer" class="btn btn--md gift__link">Click para saber más</a>
             </div>
         </section>
     </main>
@@ -89,8 +92,8 @@
         <div class="footer__cols">
             <div class="footer__col">
                 <h3 class="heading-tertiary text-white">Copistería <br /> San Jorge</h3>
-                <p class="paragraph text-white-shadowed">Líderes en servicios de copistería con más de 10 años de experiencia.
-                    Nuestros clientes son lo más importante.</p>
+                <p class="paragraph text-white-shadowed">Líderes en servicios de copistería y diseño con más de 10 años de experiencia.
+                    </p>
             </div>
             <div class="footer__col">
                 <h4 class="heading-quaternary text-white">Explora</h4>
@@ -105,8 +108,9 @@
             </div>
             <div class="footer__col">
                 <h4 class="heading-quaternary text-white">Visítanos</h4>
-                <p class="paragraph text-white-shadowed mb-sm">Calle Entenza, 19, Bajo.
+                <p class="paragraph text-white-shadowed mb-sm">Calle Entenza, 19 (Bajo).
                     Código postal 03803.
+                    <br/>
                     Alcoy (Alicante). España</p>
                 <h4 class="heading-quaternary text-white">Contacto</h4>
                 <p class="paragraph text-white-shadowed">copisteriasanjorge@
@@ -138,6 +142,9 @@
     </footer>
 
 
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

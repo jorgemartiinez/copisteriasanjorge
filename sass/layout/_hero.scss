@@ -3,11 +3,18 @@
   position: relative;
   height: 90%;
   width: 100%;
+
   @include respond(tab-port) {
+    height: 80%;
+  }
+
+  @include respond(phone) {
     height: 70%;
   }
 
- 
+  @include respond(phone-small) {
+    height: 90%;
+  }
 
   // * DIV WITH ALL THE TEXT, BG IMAGE AND STUFF
   &__overlay {
@@ -23,43 +30,58 @@
 
     .heading-primary {
       text-align: center;
-      padding-top: 8rem;
-      padding-right: .5rem;
-      padding-left: .5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      opacity: 1;
+      animation: moveInRightToLeft 1s 1s;
     }
 
     .paragraph-desc {
       padding-top: 3rem;
-      padding-right: .2rem;
-      padding-left: .2rem;
+      padding-right: 0.2rem;
+      padding-left: 0.2rem;
       width: 55%;
+      animation: fadeIn 1s 2s;
 
       @include respond(tab-land) {
+        padding-top: 4rem;
         width: 65%;
       }
 
       @include respond(tab-port) {
         width: 85%;
       }
+    }
+  }
 
-      @include respond(phone) {
-        width: 95%;
-      }
+  &__text-1 {
+    display: block;
+    padding-top: 5rem;
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-white;
+    animation: moveInLeftToRight 1s;
+
+    @include respond(tab-land) {
+      padding-top: 20rem;
+    }
+    @include respond(phone) {
+      padding-top: 10rem;
     }
   }
 
   // * ICON ARROW DIV > IMG
   &__arrow {
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     right: 50%;
     transform: translateX(50%);
-    cursor: pointer;
   }
 
   &__arrow-img {
     width: 5rem;
     height: 5rem;
-    animation: bounce 1.5s ease-in-out infinite;
+    animation: bounce 1.2s ease-in-out infinite;
   }
 }

@@ -14,11 +14,11 @@ html {
   height: 100%;
   width: 100%;
   @include respond(tab-land) {
-    font-size: 56.25%; 
+    font-size: 56.25%;
   }
 
   @include respond(tab-port) {
-    font-size: 50%; 
+    font-size: 50%;
   }
 
   @include respond(phone) {

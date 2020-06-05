@@ -16,8 +16,8 @@
   }
 
   // * TAMAÑOS COLUMNAS
-  &__col::nth-child(1) {
-    flex: 0 0 25%;
+  &__col:nth-child(1) {
+    flex: 0 0 30%;
   }
 
   &__col:nth-child(2) {
@@ -25,7 +25,7 @@
   }
 
   &__col:nth-child(3) {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
   }
 
   &__col {
@@ -46,6 +46,9 @@
   &__links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
     @include respond(tab-port) {
       flex-direction: row;
       width: 100%;
@@ -55,6 +58,8 @@
   }
 
   &__link-item {
+    backface-visibility: hidden;
+    transition: all 0.3s ease;
     &:not(:last-child) {
       margin-bottom: 1rem;
       @include respond(tab-port) {
@@ -62,9 +67,20 @@
         margin-right: 3rem;
       }
     }
+    &:hover {
+      transform: skew(-15deg);
+    }
   }
   &__link {
+    padding: 0.3rem;
     text-transform: capitalize;
     color: $color-white-shadowed;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
 }
