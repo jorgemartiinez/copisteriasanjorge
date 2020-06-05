@@ -10,10 +10,8 @@
     width: 30rem;
     margin-bottom: 2rem;
     transition: transform 5s ease;
-
-    &:hover {
-      transform: rotate(360deg);
-    }
+    animation: pulse 2s ease infinite;
+    cursor: pointer;
   }
 
   &__link {

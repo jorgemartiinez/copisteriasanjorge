@@ -81,7 +81,7 @@
                     clientes. Contamos con más de 100 productos.</p>
             </div>
             <div class="gift">
-                <img src="assets/img/products/regalos-personalizados.svg" alt="Regalos Personalizados" class="gift__img">
+                <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer"><img src="assets/img/products/regalos-personalizados.svg" alt="Regalos Personalizados" class="gift__img"></a>
                 <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer" class="btn btn--md gift__link">Click para saber más</a>
             </div>
         </section>
@@ -93,7 +93,7 @@
             <div class="footer__col">
                 <h3 class="heading-tertiary text-white">Copistería <br /> San Jorge</h3>
                 <p class="paragraph text-white-shadowed">Líderes en servicios de copistería y diseño con más de 10 años de experiencia.
-                    </p>
+                </p>
             </div>
             <div class="footer__col">
                 <h4 class="heading-quaternary text-white">Explora</h4>
@@ -110,7 +110,7 @@
                 <h4 class="heading-quaternary text-white">Visítanos</h4>
                 <p class="paragraph text-white-shadowed mb-sm">Calle Entenza, 19 (Bajo).
                     Código postal 03803.
-                    <br/>
+                    <br />
                     Alcoy (Alicante). España</p>
                 <h4 class="heading-quaternary text-white">Contacto</h4>
                 <p class="paragraph text-white-shadowed">copisteriasanjorge@
