@@ -4,20 +4,31 @@
 .btn {
   font-weight: 500;
   border-radius: 1.2rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     transform: translateY(-1rem);
-    box-shadow: .5rem .5rem 1rem rgba($color-black, .2);
+    box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-//   &:active {
-//     transform: translateY(1rem);
-//   }
+  //   &:active {
+  //     transform: translateY(1rem);
+  //   }
 
   // * MODIFIERS
   &--md {
     padding: 1.5rem;
     background-color: $color-secondary;
+  }
+
+  &--outline-white {
+    padding: 1.5rem;
+    border: 1px solid $color-white;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+    }
   }
 }

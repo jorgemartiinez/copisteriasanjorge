@@ -1,0 +1,36 @@
+/* LAYOUT PÁGINA NOSOTROS */
+.about {
+  @include bgFullCover('../assets/img/bg/bg-about.png', top center);
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  .paragraph-desc {
+    padding-bottom: 5rem;
+  }
+
+  .text-center {
+    animation:jello-horizontal 1s both
+  }
+}
+
+.who-wrapper {
+  background-color: $color-white;
+  margin-top: 0;
+}
+
+.opinions {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
+  }
+
+  .heading-secondary {
+    margin-bottom: 3rem;
+  }
+  padding-bottom: 10rem;
+}

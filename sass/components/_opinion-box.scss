@@ -1,0 +1,40 @@
+// * COMPONENTE OPINIÓN BOX
+
+.opinion-box {
+  flex: 0 0 calc(50% - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  padding: 2em;
+  background-color: $color-white;
+  border-radius: 1rem;
+
+  &:not(:last-child) {
+    margin-right: 10rem;
+    @include respond(phone) {
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include respond(phone) {
+    flex: 0 0 100%;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-style: italic;
+    height: 80%;
+  }
+
+  &__author {
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

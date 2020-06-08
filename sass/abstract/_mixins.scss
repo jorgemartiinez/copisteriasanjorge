@@ -1,12 +1,38 @@
 /* MIXINS FILE */
 
 // BARRA TEXTO DEBAJO DE TÍTULOS
-@mixin textBar($color, $translateX, $translateY) {
-  display: inline-block;
-  transform: translate($translateX, $translateY);
-  width: 5rem;
+@mixin textBar($left, $bottom, $color) {
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+  width: 4rem;
   border: 2px solid $color;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
+
+  @include respond(tab-port) {
+    left: calc(#{$left} - 5%);
+  }
+}
+
+// barrita después del titulo
+@mixin textBarAfter($left, $bottom, $color) {
+  content: '';
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+  width: 4%;
+  height: 0.11em;
+  background-color: $color;
+  border: 0.1px solid $color;
+  border-radius: 0.8rem;
+}
+
+// * imagen fondo
+@mixin bgFullCover($url, $position) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: $position;
+  background-repeat: no-repeat;
 }
 
 // MEDIA QUERY MANAGER
@@ -30,10 +56,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     }
   }
-  @if $breakpoint == phone-small {
-    @media only screen and (max-width: 25.8em) {
+  @if $breakpoint == phone-mini {
+    @media only screen and (max-width: 25em) {
       @content;
-    } //600px
+    } //400px
+  }
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } //500px
   }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {

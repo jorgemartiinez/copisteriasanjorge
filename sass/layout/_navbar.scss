@@ -61,7 +61,7 @@
     font-size: 2rem;
     color: $color-primary;
     border-radius: 0.5rem;
-    transition: all 0.2s ease-in-out;
+    transition: all .6s ease-in-out;
 
     @include respond(phone) {
       flex: 1 0 100%;

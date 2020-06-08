@@ -1,6 +1,15 @@
 .services {
-  .text-bar {
-    @include textBar($color-secondary, -220%, -600%);
+  padding-top: 5rem;
+
+  .heading-secondary {
+    position: relative;
+  }
+  .heading-secondary::after {
+    @include textBarAfter(38%, 10%, $color-secondary);
+  }
+
+  .title-wrapper {
+    position: relative;
   }
 
   &__wrapper {
@@ -16,26 +25,24 @@
 }
 
 .gifts {
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  left: 50%;
-  background-image: url('../assets/img/bg/bg-primary.svg');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
+  @include bgFullCover('../assets/img/bg/bg-primary.svg', top center);
   .heading-secondary {
+    position: relative;
     padding-top: 4rem;
   }
 
-  .text-bar {
-    @include textBar($color-white, -500%, -600%);
+  .heading-secondary::after {
+    @include textBarAfter(25%, 0%, $color-white);
+  }
+
+  .title-wrapper {
+    position: relative;
   }
 
   .paragraph-sub {
-    max-width: 100rem;
-    margin: 0 auto;
     margin-bottom: 4rem;
     padding: 1rem;
   }

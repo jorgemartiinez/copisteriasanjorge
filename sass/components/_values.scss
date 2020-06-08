@@ -1,0 +1,68 @@
+// * SECCIÓN VALUES ABOUT PAGE
+.values {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+
+  &__text {
+    flex: 0 0 50%;
+    padding: 1.5rem;
+
+    .heading-secondary {
+      margin-bottom: 1.5rem;
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__collage {
+    $m-right: 8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 calc(50% - #{$m-right});
+    height: 45rem;
+    margin-right: $m-right;
+    padding: 1.5rem;
+    @include respond(tab-port) {
+      padding-bottom: 60%;
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__collage-1 {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 60%;
+    border-radius: .3rem;
+    z-index: 10;
+
+    @include respond(tab-port) {
+      right: 0%;
+      top: 0%;
+      width: 40%;
+    }
+  }
+
+  &__collage-2 {
+    position: absolute;
+    bottom: 0%;
+    width: 60%;
+    border-radius: .3rem;
+
+    @include respond(tab-port) {
+      bottom: 0%;
+      left: 10%;
+      width: 60%;
+    }
+  }
+}

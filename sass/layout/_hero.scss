@@ -8,12 +8,20 @@
     height: 80%;
   }
 
+  @include respond(tab-land) {
+    height: 90%;
+  }
+
   @include respond(phone) {
     height: 70%;
   }
 
   @include respond(phone-small) {
-    height: 90%;
+    height: 60%;
+  }
+
+  @include respond(phone-mini) {
+    height: 70%;
   }
 
   // * DIV WITH ALL THE TEXT, BG IMAGE AND STUFF
@@ -23,17 +31,14 @@
     align-items: center;
     height: 90%;
 
-    background-image: url('../assets/img/bg/bg-with-overlay.png');
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: repeat;
-
+    @include bgFullCover('../assets/img/bg/bg-with-overlay.png', bottom center);
+  
     .heading-primary {
       text-align: center;
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       opacity: 1;
-      animation: moveInRightToLeft 1s 1s;
+      animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     }
 
     .paragraph-desc {
@@ -44,12 +49,12 @@
       animation: fadeIn 1s 2s;
 
       @include respond(tab-land) {
-        padding-top: 4rem;
-        width: 65%;
+        padding-top: 2rem;
+        width: 70%;
       }
 
       @include respond(tab-port) {
-        width: 85%;
+        width: 90%;
       }
     }
   }
@@ -61,10 +66,10 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $color-white;
-    animation: moveInLeftToRight 1s;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 
     @include respond(tab-land) {
-      padding-top: 20rem;
+      padding-top: 15rem;
     }
     @include respond(phone) {
       padding-top: 10rem;
