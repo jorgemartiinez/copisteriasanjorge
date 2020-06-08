@@ -32,7 +32,7 @@
     height: 90%;
 
     @include bgFullCover('../assets/img/bg/bg-with-overlay.png', bottom center);
-  
+
     .heading-primary {
       text-align: center;
       padding-right: 0.5rem;
@@ -46,7 +46,6 @@
       padding-right: 0.2rem;
       padding-left: 0.2rem;
       width: 55%;
-      animation: fadeIn 1s 2s;
 
       @include respond(tab-land) {
         padding-top: 2rem;

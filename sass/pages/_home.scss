@@ -27,6 +27,7 @@
 .gifts {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  margin-bottom: 0;
 
   @include bgFullCover('../assets/img/bg/bg-primary.svg', top center);
   .heading-secondary {
