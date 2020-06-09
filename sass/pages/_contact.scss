@@ -13,7 +13,7 @@
 
 .contact-info {
   padding-top: 0rem;
-  transform: translateY(-5%);
+  transform: translateY(-7%);
 
   @include respond(phone-small) {
     transform: translateY(-3%);
