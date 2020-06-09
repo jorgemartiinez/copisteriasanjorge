@@ -35,7 +35,6 @@
                 </article>
             <?php } ?>
         </div>
-
     </section>
 
     <!-- Sección regalos personalizados -->

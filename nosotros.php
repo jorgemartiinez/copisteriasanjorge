@@ -3,13 +3,13 @@
 <!-- Header about -->
 <header class="about">
     <div class="container">
-        <div class="text-center">
-            <h1 class="heading-primary text-white">Sobre Nosotros</h1>
+        <div class="m-center">
+            <h1 class="heading-primary text-white text-center">Sobre Nosotros</h1>
             <p class="paragraph-desc text-white">Llevamos más de 10 años con el objetivo de ofrecer los mejores servicios a nuestros clientes. No se que poner pero se irá viendo. </p>
-            <div>
-            <a class="btn btn--outline-white" href="#">Saber más</a>
+            <div class="text-center">
+                <a class="btn btn--outline-white" href="#">Saber más</a>
+            </div>
         </div>
-    </div>
 </header>
 
 <!-- Main content -->
@@ -42,7 +42,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam maxime sed amet voluptatum beatae repellat id qui? Exercitationem possimus nemo optio dolorum veritatis quod illum quibusdam id nisi adipisci.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et, culpa delectus est saepe ipsum, sapiente impedit deserunt id expedita omnis eaque hic eius, dolor ducimus inventore modi perspiciatis autem?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio amet asperiores ducimus illo, atque, porro modi omnis voluptas earum saepe molestiae deserunt nisi ex perspiciatis impedit aut excepturi. Aperiam?</p>
-            
+
         </div>
     </section>
 
@@ -61,6 +61,9 @@
                 <p class="opinion-box__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi, sint quidem in distinctio magni labore iste nostrum! Blanditiis, cupiditate"</p>
                 <footer class="opinion-box__author">Jorge - infoalcoi</footer>
             </blockquote>
+        </div>
+        <div class="text-center pt-md">
+            <a class="text-primary" rel="noreferrer" title="Leer más reviews en Google" href="https://bit.ly/37ddYXD">Leer más reviews en Google </a>
         </div>
     </section>
 

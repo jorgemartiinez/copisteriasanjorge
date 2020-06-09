@@ -26,7 +26,7 @@
                 <?php
                 foreach ($nav_links as $nav) { ?>
                     <li class="nav__item">
-                        <a href="<?= $nav ?>" class="nav__link"><?= $nav ?></a>
+                        <a href="<?= $nav ?>.php" class="nav__link"><?= $nav ?></a>
                     </li>
                 <?php } ?>
             </ul>

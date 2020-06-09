@@ -1,0 +1,25 @@
+/* CONTACT PAGE STYLES */
+
+.contact {
+  position: relative;
+  @include bgFullCover('../assets/img/bg/bg-contact.png', top center);
+  padding-top: 5%;
+
+  .paragraph-desc {
+    padding-bottom: 10%;
+    padding: 0 1.5rem 10% 1.5rem;
+  }
+}
+
+.contact-info {
+  padding-top: 0rem;
+  transform: translateY(-5%);
+
+  @include respond(phone-small) {
+    transform: translateY(-3%);
+  }
+}
+
+.contact-form {
+  margin-top: -5rem;
+}

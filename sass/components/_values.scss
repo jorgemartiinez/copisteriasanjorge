@@ -31,6 +31,7 @@
     height: 45rem;
     margin-right: $m-right;
     padding: 1.5rem;
+
     @include respond(tab-port) {
       padding-bottom: 60%;
       width: 100%;
@@ -43,8 +44,9 @@
     left: 50%;
     top: 0%;
     width: 60%;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     z-index: 10;
+    animation: floatUp 6s ease-in-out infinite;
 
     @include respond(tab-port) {
       right: 0%;
@@ -57,7 +59,8 @@
     position: absolute;
     bottom: 0%;
     width: 60%;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
+    animation: floatDown 6s ease-in-out infinite;
 
     @include respond(tab-port) {
       bottom: 0%;

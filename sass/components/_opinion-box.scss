@@ -12,6 +12,9 @@
   background-color: $color-white;
   border-radius: 1rem;
 
+  transition: all .3s ease-in-out;
+
+
   &:not(:last-child) {
     margin-right: 10rem;
     @include respond(phone) {
@@ -36,5 +39,10 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
   }
 }

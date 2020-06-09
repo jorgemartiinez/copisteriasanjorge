@@ -3,7 +3,7 @@
     <div class="footer__cols">
         <div class="footer__col">
             <h3 class="heading-tertiary text-white">Copistería <br /> San Jorge</h3>
-            <p class="paragraph text-white-shadowed">Líderes en servicios de copistería y diseño con más de 10 años de experiencia.
+            <p class="paragraph text-white-shadowed">Líderes en servicios de copistería y diseño en Alcoy con más de 10 años de experiencia.
             </p>
         </div>
         <div class="footer__col">

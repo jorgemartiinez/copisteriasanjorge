@@ -1,6 +1,4 @@
 .services {
-  padding-top: 5rem;
-
   .heading-secondary {
     position: relative;
   }
@@ -15,7 +13,7 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 5rem;
     padding: 1rem;
     @include respond(phone) {
@@ -25,8 +23,7 @@
 }
 
 .gifts {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 7rem;
   margin-bottom: 0;
 
   @include bgFullCover('../assets/img/bg/bg-primary.svg', top center);

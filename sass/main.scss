@@ -17,6 +17,8 @@
 @import 'components/who';
 @import 'components/values';
 @import 'components/opinion-box';
+@import 'components/contact-box';
+@import 'components/form';
 
 // * LAYOUT
 @import 'layout/layout';
@@ -27,3 +29,4 @@
 // * PAGES
 @import 'pages/home';
 @import 'pages/about';
+@import 'pages/contact';

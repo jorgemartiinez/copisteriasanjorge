@@ -44,12 +44,13 @@ body {
   width: 100%;
   line-height: 1.7;
   // overflow-x: hidden;
-  animation: fadeIn .5s ease-in;
+  animation: fadeIn 0.5s ease-in;
 }
 
 section {
-  margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 a {

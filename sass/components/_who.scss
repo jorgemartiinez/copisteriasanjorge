@@ -1,7 +1,7 @@
 // * SECCIÓN QUIENES SOMOS ABOUT PAGE
 .who {
   display: flex;
-  padding: 5rem;
+  padding: 2rem;
 
   &__text {
     flex: 0 0 calc(55% - 8rem);
@@ -31,6 +31,7 @@
     width: 100%;
     height: 100%;
     border-radius: 0.4rem;
+
     @include respond(tab-port) {
       height: 40%;
     }
