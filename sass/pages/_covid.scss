@@ -1,0 +1,5 @@
+.covid {
+  @include bgFullCover('../assets/img/bg/bg-covid.png', bottom center);
+  padding: 10rem 1rem;
+  margin-bottom: 0;
+}

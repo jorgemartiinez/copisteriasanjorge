@@ -8,8 +8,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 3rem;
-  padding: 2rem;
+  padding: 0rem 2rem;
+
+  @include respond(tab-port){
+    margin-bottom: 0rem;
+    padding: 1rem;
+  }
 }

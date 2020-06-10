@@ -12,8 +12,7 @@
   background-color: $color-white;
   border-radius: 1rem;
 
-  transition: all .3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 
   &:not(:last-child) {
     margin-right: 10rem;
@@ -44,5 +43,6 @@
   &:hover {
     color: $color-white;
     background-color: $color-primary;
+    font-weight: 600;
   }
 }

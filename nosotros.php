@@ -63,7 +63,7 @@
             </blockquote>
         </div>
         <div class="text-center pt-md">
-            <a class="text-primary" rel="noreferrer" title="Leer más reviews en Google" href="https://bit.ly/37ddYXD">Leer más reviews en Google </a>
+            <a class="text-primary" target="_blank" rel="noreferrer" title="Leer más reviews en Google" href="https://bit.ly/37ddYXD">Leer más reviews en Google </a>
         </div>
     </section>
 
