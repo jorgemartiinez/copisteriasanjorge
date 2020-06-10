@@ -1,5 +1,13 @@
 /* MAIN JS FILE */
 (function ($) {
+  $('.lazy').Lazy({
+    scrollDirection: 'vertical',
+    effect: 'fadeIn',
+    visibleOnly: true,
+    onError: function (element) {
+      console.log('error loading ' + element.data('src'));
+    }
+  });
   var menuBtn = $('.nav__burger-icon');
   menuBtn.click(toggleMenu);
 })(jQuery);

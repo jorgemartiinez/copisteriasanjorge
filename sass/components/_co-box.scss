@@ -16,9 +16,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
     background-color: $color-white;
     transform: translateY(-20%);
     border-radius: 0.8rem;
+
     &:not(:last-child) {
       margin-right: $m-right;
       @include respond(tab-port) {
@@ -34,5 +36,7 @@
 
   &__img {
     width: 8rem;
+    animation: pulse 2s ease infinite;
+    cursor: pointer;
   }
 }

@@ -41,7 +41,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti perferendis quisquam neque. Deserunt blanditiis eius voluptas, dolor dicta ea! Ab sapiente ut quis architecto provident tenetur error ratione aliquam.</p>
                 </article>
                 <article class="prod">
-                    <img class="prod__img" src="assets/img/products/Image 6.png">
+                    <img class="prod__img lazy" data-src="assets/img/products/Image 6.png">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti perferendis quisquam neque. </p>
                 </article>
             </div>
