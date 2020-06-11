@@ -54,7 +54,7 @@
     <section class="contact-form">
         <div class="text-center">
             <h2 class="heading-primary text-secondary">Formulario de Contacto</h2>
-            <p class="paragraph-desc">Si prefieres contactarnos mediante formulario, intentaremos responderte lo antes posible.</p>
+            <p class="paragraph-sub">Si prefieres contactarnos mediante formulario, intentaremos responderte lo antes posible.</p>
         </div>
         <form id="contact-form" class="form u-center-text">
             <fieldset class="form__fieldset mb-sm">

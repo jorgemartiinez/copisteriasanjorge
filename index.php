@@ -14,6 +14,22 @@
 </header>
 
 <main>
+
+    <!-- Sección nosotros -->
+    <section class="us container">
+        <div class="us__text">
+            <h2 class="heading-secondary text-secondary mb-sm">Quiénes Somos</h2>
+            <p class="paragraph-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi molestiae libero, vel ullam error blanditiis voluptates sed ea, sint reprehenderit sapiente numquam quo voluptas mollitia illum recusandae iste deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque amet dolorem praesentium ad nobis commodi nostrum, corrupti, corporis tempore officia excepturi veritatis dolores vero, neque saepe earum asperiores explicabo?</p>
+            <br />
+            <div class="m-center">
+                <a href="novedades.php" target="_blank" rel="noreferrer" class="btn btn--md gift__link m-center">Conocenos un poco más</a>
+            </div>
+        </div>
+        <div class="us__photo">
+            <img class="us__img lazy" data-src="assets/img/home/question-photo.svg" width="300">
+        </div>
+    </section>
+
     <!-- Sección servicios -->
     <section class="services container">
         <div class="text-center">

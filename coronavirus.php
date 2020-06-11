@@ -29,7 +29,7 @@
     <section class="products">
         <div class="m-center">
             <h2 class="heading-secondary text-secondary text-center mb-sm">Productos Coronavirus</h2>
-            <p class="paragraph-desc">Si te interesa cualquiera de estos productos, puedes contactarnos con cualquiera de las opciones indicadas, o visitándonos en nuestro establecimiento. <br />
+            <p class="paragraph-sub">Si te interesa cualquiera de estos productos, puedes contactarnos con cualquiera de las opciones indicadas, o visitándonos en nuestro establecimiento. <br />
                 Nos comprometemos a su entrega con la menor brevedad posible.
             </p>
         </div>
@@ -38,10 +38,12 @@
             <div class="flex-row">
                 <article class="prod">
                     <img class="prod__img lazy" data-src="assets/img/products/Image-5.png">
+                    <h3 class="heading-tertiary text-secondary mt-sm mb-sm">Mascarillas y to eso sabeh</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti perferendis quisquam neque. Deserunt blanditiis eius voluptas, dolor dicta ea! Ab sapiente ut quis architecto provident tenetur error ratione aliquam.</p>
                 </article>
                 <article class="prod">
                     <img class="prod__img lazy" data-src="assets/img/products/Image 6.png">
+                    <h3 class="heading-tertiary text-secondary mt-sm mb-sm">Mascarillas y to eso sabeh</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti perferendis quisquam neque. </p>
                 </article>
             </div>

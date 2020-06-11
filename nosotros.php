@@ -5,7 +5,7 @@
     <div class="container">
         <div class="m-center">
             <h1 class="heading-primary text-white text-center">Sobre Nosotros</h1>
-            <p class="paragraph-desc text-white">Llevamos más de 10 años con el objetivo de ofrecer los mejores servicios a nuestros clientes. No se que poner pero se irá viendo. </p>
+            <p class="paragraph-sub text-white">Llevamos más de 10 años con el objetivo de ofrecer los mejores servicios a nuestros clientes. No se que poner pero se irá viendo. </p>
             <div class="text-center">
                 <a class="btn btn--outline-white" href="#">Saber más</a>
             </div>

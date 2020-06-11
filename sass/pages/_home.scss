@@ -1,9 +1,51 @@
+.us {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+  padding: 1.5rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__text {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include respond(tab-port) {
+      order: 2;
+    }
+  }
+
+  &__photo {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    @include respond(tab-port) {
+      order: 1;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__photo:hover &__img {
+    transform: scale(1.05) rotate(-5deg);
+  }
+
+  &__img {
+    width: 40rem;
+    transition: all .5s ease;
+  }
+
+}
+
 .services {
   .heading-secondary {
     position: relative;
-  }
-  .heading-secondary::after {
-    @include textBarAfter(38%, 10%, $color-secondary);
   }
 
   .title-wrapper {
@@ -32,9 +74,6 @@
     padding-top: 4rem;
   }
 
-  .heading-secondary::after {
-    @include textBarAfter(25%, 0%, $color-white);
-  }
 
   .title-wrapper {
     position: relative;
