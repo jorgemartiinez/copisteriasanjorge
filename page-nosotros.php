@@ -1,11 +1,11 @@
-<?php include('partials/header.php') ?>
+<?php get_header(); ?>
 
 <!-- Header about -->
-<header class="about">
+<header class="about" style="background-image: url(<?= the_post_thumbnail_url(); ?>)">
     <div class="container">
         <div class="m-center">
-            <h1 class="heading-primary text-white text-center">Sobre Nosotros</h1>
-            <p class="paragraph-sub text-white">Llevamos más de 10 años con el objetivo de ofrecer los mejores servicios a nuestros clientes. No se que poner pero se irá viendo. </p>
+            <h1 class="heading-primary text-white text-center">Sobre <?= the_title(); ?></h1>
+            <p class="paragraph-sub text-white"><?= the_field('nosotros_texto_principal') ?></p>
             <div class="text-center">
                 <a class="btn btn--outline-white" href="#">Saber más</a>
             </div>
@@ -19,13 +19,12 @@
         <div class="who container">
             <div class="who__text">
                 <h2 class="heading-secondary text-secondary">Quiénes Somos</h2>
-                <p class="paragraph-sub">Somos una empresa fundada en Alcoy en el año 2008. <br /> <br />
-                    Durante todo este tiempo hemos dado servicio tanto a clientes como a empresas. <br /> <br />
-                    Somos un referente local en todo lo referente a las artes gráficas y de vídeo.
+                <p class="paragraph-sub">
+                    <?= the_field('quienes_somos_texto') ?>
                 </p>
             </div>
             <div class="who__img-wrapper">
-                <img class="who__img" src="assets/img/about/about-1.png" alt="Quienes Somos">
+                <img class="who__img" src="<?= get_template_directory_uri(); ?>/assets/img/about/about-1.png" alt="Quienes Somos - Copisteria San Jorge Alcoy">
             </div>
         </div>
     </section>
@@ -34,15 +33,14 @@
 
     <section class="values container">
         <div class="values__collage">
-            <img class="values__collage-1" src="assets/img/about/about-2.png" alt="Valor 1">
-            <img class="values__collage-2" src="assets/img/about/about-3.png" alt="Valor 2">
+            <img class="values__collage-1" src="<?= get_template_directory_uri(); ?>/assets/img/about/about-2.png" alt="Valor 1">
+            <img class="values__collage-2" src="<?= get_template_directory_uri(); ?>/assets/img/about/about-3.png" alt="Valor 2">
         </div>
         <div class="values__text">
             <h2 class="heading-secondary text-secondary">Nuestros valores</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam maxime sed amet voluptatum beatae repellat id qui? Exercitationem possimus nemo optio dolorum veritatis quod illum quibusdam id nisi adipisci.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et, culpa delectus est saepe ipsum, sapiente impedit deserunt id expedita omnis eaque hic eius, dolor ducimus inventore modi perspiciatis autem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio amet asperiores ducimus illo, atque, porro modi omnis voluptas earum saepe molestiae deserunt nisi ex perspiciatis impedit aut excepturi. Aperiam?</p>
-
+            <div class="paragraph-sub">
+                <?= the_field('nuestros_valores_texto') ?>
+            </div>
         </div>
     </section>
 
@@ -69,4 +67,6 @@
 
 </main>
 
-<?php include('partials/footer.php') ?>
+
+
+<?php get_footer(); ?>

@@ -1,11 +1,11 @@
-<?php include('partials/header.php') ?>
+<?php get_header(); ?>
 
 <!-- Header contact -->
-<header class="contact">
+<header class="contact" style="background-image: url(<?= the_post_thumbnail_url(); ?>)">
     <div class="container">
         <div class="m-center">
             <h1 class="heading-primary text-white text-center">Contáctanos</h1>
-            <p class="paragraph-desc text-white">No dudes en contactarnos si tienes cualquier consulta. Tanto si eres un particular como una empresa que quiere hacerse con nuestros servicios o buscar más información al respecto, nuestro equipo estará encantado de atenderte.</p>
+            <p class="paragraph-desc text-white"><?=the_field('texto_descripcion');?></p>
         </div>
     </div>
 </header>
@@ -16,7 +16,7 @@
             <div class="contact-box__wrapper">
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="assets/img/icons/ico-phone.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-phone.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Llámanos</h2>
@@ -27,7 +27,7 @@
 
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="assets/img/icons/ico-envelope.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-envelope.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Email</h2>
@@ -38,7 +38,7 @@
 
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="assets/img/icons/ico-arrow.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-arrow.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Visítanos</h2>
@@ -54,7 +54,7 @@
     <section class="contact-form">
         <div class="text-center">
             <h2 class="heading-primary text-secondary">Formulario de Contacto</h2>
-            <p class="paragraph-sub">Si prefieres contactarnos mediante formulario, intentaremos responderte lo antes posible.</p>
+            <p class="paragraph-sub">Si prefieres contactarnos mediante formulario, estaremos encantados de responderte lo antes posible.</p>
         </div>
         <form id="contact-form" class="form u-center-text">
             <fieldset class="form__fieldset mb-sm">
@@ -84,4 +84,4 @@
 
 
 
-<?php include('partials/footer.php') ?>
+<?php get_footer(); ?>

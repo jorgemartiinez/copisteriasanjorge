@@ -57,7 +57,7 @@
     }
   }
 
-  &__link-item {
+  li {
     backface-visibility: hidden;
     transition: all 0.3s ease;
     &:not(:last-child) {
@@ -71,8 +71,7 @@
       transform: skew(-15deg);
     }
   }
-  &__link {
-    padding: 0.3rem;
+  a {
     text-transform: capitalize;
     color: $color-white-shadowed;
     border-radius: 0.2rem;
@@ -82,5 +81,9 @@
     &:hover {
       background-color: $color-secondary;
     }
+  }
+  a[aria-current='page'] {
+    color: $color-white;
+    background-color: $color-secondary;
   }
 }

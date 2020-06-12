@@ -18,7 +18,10 @@
   }
 
   &__logo-img {
-    width: 7rem;
+    width: 6rem;
+    @include respond(tab-port){
+      width: 10rem;
+    }
   }
 
   // * LINKS DIV WITH UL INSIDE DIV>UL>LI>A
@@ -47,7 +50,7 @@
     }
   }
 
-  &__item {
+  li {
     margin-right: 2.5rem;
     @include respond(phone) {
       display: flex;
@@ -55,13 +58,13 @@
     }
   }
 
-  &__link {
+  a {
     padding: 1.5rem;
     text-transform: capitalize;
     font-size: 2rem;
     color: $color-primary;
     border-radius: 0.5rem;
-    transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 
     @include respond(phone) {
       flex: 1 0 100%;
@@ -95,5 +98,10 @@
     @include respond(phone) {
       display: block;
     }
+  }
+
+  a[aria-current="page"] {
+    background-color: $color-secondary;
+    color: $color-white;
   }
 }
