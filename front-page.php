@@ -20,7 +20,7 @@
             <p class="paragraph-sub"><?= the_field('quienes_somos'); ?></p>
             <br />
             <div class="m-center">
-                <a href="novedades.php" target="_blank" rel="noreferrer" class="btn btn--md gift__link m-center">Conocenos un poco más</a>
+                <a href="<?php echo get_page_link( get_page_by_title( 'nosotros' )->ID ); ?>" class="btn btn--md gift__link m-center">Conocenos un poco más</a>
             </div>
         </div>
         <div class="us__photo">

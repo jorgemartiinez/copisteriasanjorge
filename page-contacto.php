@@ -5,7 +5,7 @@
     <div class="container">
         <div class="m-center">
             <h1 class="heading-primary text-white text-center">Contáctanos</h1>
-            <p class="paragraph-desc text-white"><?=the_field('texto_descripcion');?></p>
+            <p class="paragraph-desc text-white"><?= the_field('texto_descripcion'); ?></p>
         </div>
     </div>
 </header>
@@ -16,7 +16,9 @@
             <div class="contact-box__wrapper">
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-phone.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <a href="tel:965522047" rel="noreferrer" title="Llamar por teléfono de Copistería San Jorge Alcoy">
+                            <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-phone.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        </a>
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Llámanos</h2>
@@ -27,7 +29,7 @@
 
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-envelope.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <a href="mailto:copisteriasanjorge@copisteriasanjorge.com" title="Enviar Email a Copistería San Jorge Alcoy"><img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-envelope.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy"></a>
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Email</h2>
@@ -38,7 +40,9 @@
 
                 <div class="contact-box__column">
                     <div class="contact-box__img-wrapper">
-                        <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-arrow.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/edSFxwx2ZxdoGkZw7" title="Ver Mapa de Copistería San Jorge Alcoy">
+                            <img class="contact-box__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-arrow.svg" alt="Contáctanos por teléfono Copistería San Jorge Alcoy">
+                        </a>
                     </div>
                     <div class="contact-box__text-wrapper">
                         <h2>Visítanos</h2>
@@ -56,29 +60,9 @@
             <h2 class="heading-primary text-secondary">Formulario de Contacto</h2>
             <p class="paragraph-sub">Si prefieres contactarnos mediante formulario, estaremos encantados de responderte lo antes posible.</p>
         </div>
-        <form id="contact-form" class="form u-center-text">
-            <fieldset class="form__fieldset mb-sm">
-                <div class="form__row">
-                    <div class="form__name">
-                        <label for="nombre" class="form__label">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="150" class="form__input" required />
-                    </div>
-                    <div class="form__email">
-                        <label for="email" class="form__label">Correo</label>
-                        <input type="email" id="email" name="email" minlength="5" maxlength="180" class="form__input" required />
-                    </div>
-                </div>
-                <div class="form__row">
-                    <div class="form__message">
-                        <label for="mensaje" class="form__label">Mensaje</label>
-                        <textarea type="text" id="mensaje" name="mensaje" class="form__textarea" minlength="10" maxlength="300" required></textarea>
-                    </div>
-                </div>
-            </fieldset>
-            <button class="btn btn--input" type="submit">
-                ENVIAR MENSAJE
-            </button>
-        </form>
+        <div class="form">
+            <?php echo do_shortcode('[contact-form-7 id="120" title="Formulario de contacto 1"]'); ?>
+        </div>
     </section>
 </main>
 

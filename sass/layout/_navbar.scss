@@ -19,7 +19,7 @@
 
   &__logo-img {
     width: 6rem;
-    @include respond(tab-port){
+    @include respond(tab-port) {
       width: 10rem;
     }
   }
@@ -88,6 +88,11 @@
   // * ICONO MENU EN MOVIL
   &__burger-wrapper {
     margin-top: 2rem;
+    @include respond(phone) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &__burger-icon {
@@ -95,12 +100,17 @@
     width: 12rem;
     padding: 1.5rem;
     cursor: pointer;
+    order: 1;
+    transition: transform .4s ease;
     @include respond(phone) {
       display: block;
     }
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
-  a[aria-current="page"] {
+  a[aria-current='page'] {
     background-color: $color-secondary;
     color: $color-white;
   }

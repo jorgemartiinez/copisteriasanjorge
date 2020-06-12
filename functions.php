@@ -126,3 +126,10 @@ function copisteria_widget_areas()
 }
 
 add_action('widgets_init', 'copisteria_widget_areas');
+
+// ! TEXTAREA PAGES
+// function remove_textarea()
+// {
+//     remove_post_type_support('page', 'editor');
+// }
+// add_action('admin_init', 'remove_textarea');

@@ -6,9 +6,6 @@
         <div class="m-center">
             <h1 class="heading-primary text-white text-center">Sobre <?= the_title(); ?></h1>
             <p class="paragraph-sub text-white"><?= the_field('nosotros_texto_principal') ?></p>
-            <div class="text-center">
-                <a class="btn btn--outline-white" href="#">Saber más</a>
-            </div>
         </div>
 </header>
 
@@ -51,13 +48,14 @@
             <h2 class="heading-secondary text-secondary">Qué dicen nuestros clientes</h2>
         </div>
         <div class="opinions__wrapper">
+            <?php $reviews = get_field('reviews_grupo'); ?>
             <blockquote class="opinion-box">
-                <p class="opinion-box__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi, sint quidem in distinctio magni labore iste nostrum! Blanditiis, cupiditate ab iste praesentium porro temporibus. Soluta excepturi odio ipsa molestiae."</p>
-                <footer class="opinion-box__author">Jorge - infoalcoi</footer>
+                <p class="opinion-box__text">"<?= $reviews['texto_review_1'] ?>"</p>
+                <footer class="opinion-box__author"><?= $reviews['autor_review_1'] ?></footer>
             </blockquote>
             <blockquote class="opinion-box">
-                <p class="opinion-box__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi, sint quidem in distinctio magni labore iste nostrum! Blanditiis, cupiditate"</p>
-                <footer class="opinion-box__author">Jorge - infoalcoi</footer>
+                <p class="opinion-box__text">"<?=$reviews['texto_review_2']?>"</p>
+                <footer class="opinion-box__author"><?=$reviews['autor_review_2']?></footer>
             </blockquote>
         </div>
         <div class="text-center pt-md">

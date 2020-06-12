@@ -33,6 +33,7 @@
     height: 100%;
     border-radius: 0.4rem;
     transition: all .5s ease;
+    transform: rotate(5deg);
 
     @include respond(tab-port) {
       height: 40%;

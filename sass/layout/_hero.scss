@@ -13,11 +13,11 @@
   }
 
   @include respond(phone) {
-    height: 70%;
+    height: 75%;
   }
 
   @include respond(phone-small) {
-    height: 60%;
+    height: 65%;
   }
 
   @include respond(phone-mini) {
@@ -46,11 +46,10 @@
       padding-right: 0.2rem;
       padding-bottom: 5rem;
       padding-left: 0.2rem;
-      max-width: 55%;
+      width: 70%;
 
       @include respond(tab-land) {
         padding-top: 2rem;
-        width: 70%;
       }
 
       @include respond(tab-port) {
@@ -79,7 +78,7 @@
   // * ICON ARROW DIV > IMG
   &__arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     right: 50%;
     transform: translateX(50%);
   }
