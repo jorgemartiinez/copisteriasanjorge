@@ -129,12 +129,12 @@ add_action('widgets_init', 'copisteria_widget_areas');
 
 if (class_exists('autoptimizeCache')) {
     $myMaxSize = 500000;
-    $statArr=autoptimizeCache::stats();
-    $cacheSize=round($statArr[1]/1024);
-    
-    if ($cacheSize>$myMaxSize){
-       autoptimizeCache::clearall();
-       header("Refresh:0");
+    $statArr = autoptimizeCache::stats();
+    $cacheSize = round($statArr[1] / 1024);
+
+    if ($cacheSize > $myMaxSize) {
+        autoptimizeCache::clearall();
+        header("Refresh:0");
     }
 }
 
@@ -144,3 +144,32 @@ if (class_exists('autoptimizeCache')) {
 //     remove_post_type_support('page', 'editor');
 // }
 // add_action('admin_init', 'remove_textarea');
+
+// * DEFER RECAPTCHA
+add_filter('wpcf7_load_js', '__return_false');
+add_filter('wpcf7_load_css', '__return_false');
+
+function googleRecaptchaRemove()
+{
+    wp_dequeue_script('google-recaptcha');
+}
+add_action('wp_print_scripts', 'googleRecaptchaRemove', 100);
+
+function googleRecaptchaAdd()
+{
+    if (is_page('contacto')) {
+        wp_enqueue_script('google-recaptcha');
+    }
+}
+add_action('wp_print_scripts', 'googleRecaptchaAdd', 100);
+
+function ceramica_scripts()
+{
+    if (is_page('contacto')) {
+        if (function_exists('wpcf7_enqueue_scripts')) {
+            wpcf7_enqueue_scripts();
+            wpcf7_enqueue_styles();
+        }
+    }
+}
+add_action('wp_enqueue_scripts', 'ceramica_scripts');

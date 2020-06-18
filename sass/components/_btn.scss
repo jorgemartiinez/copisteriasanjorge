@@ -44,8 +44,8 @@
   &--input {
     display: block;
     padding: 2rem;
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $color-primary !important;
+    color: $color-white !important;
     font-size: 1.8rem;
     width: 100%;
     cursor: pointer;
