@@ -13,11 +13,14 @@
 })(jQuery);
 
 // * TOGGLE MENU
+var menuIcon = $('.nav__burger-icon');
 var nav = $('.nav__links');
 var menuOpened = false;
 var items = '.nav__item';
 
 function toggleMenu() {
+  var ruta = menuIcon.attr("src");
+
   if (!menuOpened) {
     nav.css('display', 'flex');
     nav.animate(
@@ -29,6 +32,8 @@ function toggleMenu() {
         duration: 300,
         complete: function () {
           menuOpened = true;
+          ruta = ruta.split('/').slice(0,-1).join('/') + '/cross-icon.svg';
+          menuIcon.attr("src", ruta);
         }
       }
     );
@@ -43,6 +48,8 @@ function toggleMenu() {
         complete: function () {
           nav.css('display', 'none');
           menuOpened = false;
+          ruta = ruta.split('/').slice(0,-1).join('/') + '/burger-icon.svg';
+          menuIcon.attr("src", ruta);
         }
       }
     );

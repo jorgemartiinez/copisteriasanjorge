@@ -16,9 +16,7 @@
         <div class="who container">
             <div class="who__text">
                 <h2 class="heading-secondary text-secondary">Quiénes Somos</h2>
-                <p class="paragraph-sub">
-                    <?= the_field('quienes_somos_texto') ?>
-                </p>
+                <?= the_field('quienes_somos_texto') ?>
             </div>
             <div class="who__img-wrapper">
                 <img class="who__img" src="<?= get_template_directory_uri(); ?>/assets/img/about/about-1.png" alt="Quienes Somos - Copisteria San Jorge Alcoy">
@@ -54,8 +52,8 @@
                 <footer class="opinion-box__author"><?= $reviews['autor_review_1'] ?></footer>
             </blockquote>
             <blockquote class="opinion-box">
-                <p class="opinion-box__text">"<?=$reviews['texto_review_2']?>"</p>
-                <footer class="opinion-box__author"><?=$reviews['autor_review_2']?></footer>
+                <p class="opinion-box__text">"<?= $reviews['texto_review_2'] ?>"</p>
+                <footer class="opinion-box__author"><?= $reviews['autor_review_2'] ?></footer>
             </blockquote>
         </div>
         <div class="text-center pt-md">

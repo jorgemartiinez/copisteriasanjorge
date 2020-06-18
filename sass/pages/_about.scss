@@ -18,6 +18,9 @@
 .who-wrapper {
   background-color: $color-white;
   margin-top: 0;
+  @include respond(tab-port) {
+    padding-bottom: 0;
+  }
 }
 
 .opinions {

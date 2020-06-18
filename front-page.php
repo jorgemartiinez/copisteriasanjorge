@@ -17,10 +17,10 @@
     <section class="us container">
         <div class="us__text">
             <h2 class="heading-secondary text-secondary mb-sm">Quiénes Somos</h2>
-            <p class="paragraph-sub"><?= the_field('quienes_somos'); ?></p>
+            <?= the_field('quienes_somos'); ?></p>
             <br />
             <div class="m-center">
-                <a href="<?php echo get_page_link( get_page_by_title( 'nosotros' )->ID ); ?>" class="btn btn--md gift__link m-center">Conocenos un poco más</a>
+                <a href="<?php echo get_page_link( get_page_by_title( 'nosotros' )->ID ); ?>" class="btn btn--md gift__link m-center">Conócenos un poco más</a>
             </div>
         </div>
         <div class="us__photo">

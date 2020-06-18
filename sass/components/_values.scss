@@ -13,12 +13,15 @@
   &__text {
     flex: 0 0 50%;
     padding: 0 1.5rem 1.5rem 1.5rem;
-
+    margin-top: -4rem;
     .heading-secondary {
       margin-bottom: 1.5rem;
       @include respond(tab-port) {
         text-align: center;
       }
+    }
+    @include respond(tab-port) {
+      margin-top: 0rem;
     }
   }
 
@@ -27,8 +30,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1 0 calc(50% - #{$m-right});
-    height: 45rem;
+    height: 60rem;
     margin-right: $m-right;
     padding: 1.5rem;
 
@@ -41,9 +45,8 @@
 
   &__collage-1 {
     position: absolute;
-    left: 50%;
-    top: 0%;
-    width: 60%;
+    left: 40%;
+    width: 70%;
     border-radius: 0.3rem;
     z-index: 10;
     animation: floatUp 5s ease-in-out infinite;
@@ -63,16 +66,16 @@
 
   &__collage-2 {
     position: absolute;
-    bottom: 0%;
-    width: 60%;
+    bottom: -10%;
+    width: 70%;
     border-radius: 0.3rem;
     animation: floatDown 6s ease-in-out infinite;
     cursor: pointer;
 
     @include respond(tab-port) {
       bottom: 0%;
-      left: 10%;
-      width: 60%;
+      left: 15%;
+      width: 50%;
     }
 
     &:hover {
