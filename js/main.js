@@ -1,5 +1,9 @@
 /* MAIN JS FILE */
 (function ($) {
+
+   // cookies
+   $('.cookie-bar').cookieBar({ closeButton: '.btn--cookie', expiresDays: 30 });
+
   $('.lazy').Lazy({
     scrollDirection: 'vertical',
     effect: 'fadeIn',

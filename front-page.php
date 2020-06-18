@@ -3,11 +3,11 @@
 <header class="hero">
     <div class="hero__overlay" style="background-image: url(<?= the_post_thumbnail_url(); ?>)">
         <h2 class="hero__text-1">Bienvenido</h2>
-        <h1 class="heading-primary text-white"> <?= get_bloginfo('title'); ?> </h1>
+        <h1 class="heading-primary text-white">Copistería San Jorge</h1>
         <p class="paragraph-desc text-white"><?= the_field('descripcion_bienvenida'); ?></p>
-    </div>
-    <div class="hero__arrow">
-        <img src="<?= get_template_directory_uri() ?>/assets/img/icons/ico-arrow-down.svg" class="hero__arrow-img" alt="Icono Flecha Abajo Ver Más" title="¡Baja para ver más!" />
+        <div class="hero__arrow">
+            <img src="<?= get_template_directory_uri() ?>/assets/img/icons/ico-arrow-down.svg" class="hero__arrow-img" alt="Icono Flecha Abajo Ver Más" title="¡Baja para ver más!" />
+        </div>
     </div>
 </header>
 
@@ -17,8 +17,7 @@
     <section class="us container">
         <div class="us__text">
             <h2 class="heading-secondary text-secondary mb-sm">Quiénes Somos</h2>
-            <?= the_field('quienes_somos'); ?></p>
-            <br />
+            <?= the_field('quienes_somos'); ?>
             <div class="m-center">
                 <a href="<?php echo get_page_link( get_page_by_title( 'nosotros' )->ID ); ?>" class="btn btn--md gift__link m-center">Conócenos un poco más</a>
             </div>
@@ -62,11 +61,11 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="heading-secondary text-white">Regalos Personalizados</h2>
-                <p class="paragraph-sub text-white"><?= the_field('regalos_personalizados_texto'); ?>Estamos constantemente buscando formas de ofrecer más y mejores productos a nuestros clientes, y gracias a nuestros compañeros de Regalos Personales, ofrecemos un catálogo de regalos para nuestros clientes. Contamos con más de 100 productos.</p>
+                <p class="paragraph-sub text-white">Estamos constantemente buscando formas de ofrecer más y mejores productos a nuestros clientes. Ofrecemos una serie de regalos y productos online personalizados a tu medida con la mejor relación calidad-precio del mercado. Ya contamos con más de 100 productos.</p>
             </div>
             <div class="gift">
                 <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer"><img data-src="<?= get_template_directory_uri() ?>/assets/img/products/regalos-personalizados.svg" alt="Regalos Personalizados" class="gift__img lazy"></a>
-                <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer" class="btn btn--md gift__link">Click para saber más</a>
+                <a href="https://bit.ly/3eJYj4y" target="_blank" rel="noreferrer" class="btn btn--md gift__link">Click para personalizar tu regalo</a>
             </div>
         </div>
     </section>

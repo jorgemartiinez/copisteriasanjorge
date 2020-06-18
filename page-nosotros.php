@@ -5,7 +5,7 @@
     <div class="container">
         <div class="m-center">
             <h1 class="heading-primary text-white text-center">Sobre <?= the_title(); ?></h1>
-            <p class="paragraph-sub text-white"><?= the_field('nosotros_texto_principal') ?></p>
+            <p class="paragraph-desc text-white"><?= the_field('nosotros_texto_principal') ?></p>
         </div>
 </header>
 

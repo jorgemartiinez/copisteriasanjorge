@@ -13,14 +13,21 @@
     box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-  //   &:active {
-  //     transform: translateY(1rem);
-  //   }
-
   // * MODIFIERS
   &--md {
     padding: 1.5rem;
     background-color: $color-secondary;
+  }
+
+  &--small {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.3rem;
+    background-color: $color-white;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(0);
+      box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.2);
+    }
   }
 
   &--outline-white {

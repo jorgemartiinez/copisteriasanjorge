@@ -127,6 +127,17 @@ function copisteria_widget_areas()
 
 add_action('widgets_init', 'copisteria_widget_areas');
 
+if (class_exists('autoptimizeCache')) {
+    $myMaxSize = 500000;
+    $statArr=autoptimizeCache::stats();
+    $cacheSize=round($statArr[1]/1024);
+    
+    if ($cacheSize>$myMaxSize){
+       autoptimizeCache::clearall();
+       header("Refresh:0");
+    }
+}
+
 // ! TEXTAREA PAGES
 // function remove_textarea()
 // {

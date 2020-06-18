@@ -62,10 +62,12 @@
         </div>
         <div class="form">
             <?php echo do_shortcode('[contact-form-7 id="120" title="Formulario de contacto 1"]'); ?>
+            <small>Este sitio está protegido con reCAPTCHA y la
+                <a href="https://policies.google.com/privacy">Política de Privacidad</a> y los
+                <a href="https://policies.google.com/terms">Términos de servicio</a> de Google se aplican.
+            </small>
         </div>
     </section>
 </main>
-
-
 
 <?php get_footer(); ?>

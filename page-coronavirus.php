@@ -12,14 +12,14 @@
     </section>
     <section class="co container">
         <article class="co__box">
-            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=608608739" title="Abrir Conversación de Whatsapp con Copistería San Jorge Alcoy">
-                <img class="co__img" src="http://localhost/copiword/wp-content/themes/copisteriasanjorge/assets/img/icons/ico-whatsapp.svg" alt="Contactar a Copistería San Jorge Alcoy vía Whatsapp">
-            </a> 
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=+64608608739" title="Abrir Conversación de Whatsapp con Copistería San Jorge Alcoy">
+                <img class="co__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-whatsapp.svg" alt="Contactar a Copistería San Jorge Alcoy vía Whatsapp">
+            </a>
             <h3 class="heading-tertiary text-grey-dark">608608739</h3>
         </article>
 
         <article class="co__box">
-            <a target="_blank" rel="noreferrer" href="mailto:copisanjorge@gmail.com" title="Abrir Email con Copistería San Jorge Alcoy">   
+            <a target="_blank" rel="noreferrer" href="mailto:copisanjorge@gmail.com" title="Abrir Email con Copistería San Jorge Alcoy">
                 <img class="co__img" src="<?= get_template_directory_uri(); ?>/assets/img/icons/ico-envelope.svg" alt="Contactar a Copistería San Jorge Alcoy vía Email">
             </a>
             <h3 class="heading-tertiary text-grey-dark">copisanjorge@gmail.com</h3>

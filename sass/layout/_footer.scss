@@ -3,6 +3,10 @@
 
   background-color: $color-bg-soft-black;
 
+  @include respond(tab-port){
+    padding: 4rem 3rem;
+  }
+
   // * COLUMNAS
   &__cols {
     display: flex;
